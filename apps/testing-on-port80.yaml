@@ -10,7 +10,9 @@ spec:
   source:
     repoURL: https://github.com/amonsum-stack/testing-port-80
     targetRevision: main
-    path: .
+    path: .    
+    directory:
+      exclude: 'catalog-info.yaml'
   destination:
     server: https://kubernetes.default.svc
     namespace: default
